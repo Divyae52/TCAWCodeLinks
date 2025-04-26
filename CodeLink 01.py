@@ -11,7 +11,7 @@
 # as you make guesses, you will want to eliminate incorrect words
 # from the wordList.
 #
-# Note that this demo uses only the 18 words from Chapter One.The idea
+# Note that this demo uses only the 18 words from Chapter One. The idea
 # is to keep things simple so that we can really see what happens at
 # every step.  Once you have revised the code, however, feel free to
 # replace the wordList with something much longer.
@@ -63,7 +63,7 @@ def hideWord(availableWords):
 
 def guessWord(availableWords):
 
-    # this function randomly choose one word from the list
+    # this function randomly chooses one word from the list
     # you will replace this code with your better algorithm
 
     randomChoice = random.randint(0,len(availableWords)-1)
