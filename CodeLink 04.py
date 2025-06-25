@@ -3,7 +3,7 @@
 #
 # CodeLink 4
 # Eight Queens
-# last revised 12/25/24
+# last revised 6/25/25
 
 # Using backtracking, can you find the 92 solutions to Eight Queens?
 # You will need to write your own recursive function to replace the
@@ -89,13 +89,13 @@ def playRandomly (board):
         if board[randomRow][randomCol] == 0:
             # found an empty space
 
+            # test to see if placing a queen here causes a conflict
+            if not isLegal(board, randomRow, randomCol):
+                success = False
+
             # place the queen
             queensPlaced = queensPlaced + 1
             board[randomRow][randomCol] = queensPlaced
-
-            # test the board
-            if not isLegal(board, randomRow, randomCol):
-                success = False
                 
     printBoard(board)
     
